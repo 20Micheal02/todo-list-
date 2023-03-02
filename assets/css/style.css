@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: Roboto;
+    background-color: #211c30;
+}
+  
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#task-list {
+   margin-top: 40px;
+   max-width: 80%;
+}
+
+.task-list__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.task-list__img {
+    width: 30px;
+    margin-right: 10px;
+}
+.task-list__title {
+    color: #fff;
+    font-size: 28px;
+}
+
+  
+#add-task-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+  
+#add-task-form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+  
+#add-task-form button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #055d60;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    border: 1px solid #055d60;
+}
+  
+#add-task-form button:hover {
+    background-color: #211c30;
+    border: 1px solid #fff;
+    transition: .3s;
+}
+  
+#tasks {
+    list-style-type: none;
+}
+  
+.task-input__style {
+    margin-right: 10px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #211c30;
+    position: relative;
+}
+  
+ .task input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.task-text {
+    flex-grow: 1;   
+    color: #fff; 
+}
+  
+.task .task-actions {
+    display: flex;
+}
+  
+.task .task-actions button {
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f44336;
+    color: #fff;
+    cursor: pointer;
+}
+
+.task .task-actions button.edit-button {
+    background-color: #211c30;
+    border: 1px solid #fff;
+    transition: .3s;
+}
+
+.task .task-actions button:hover {
+    opacity: 0.7;
+ }
+
+.delete-button {
+    margin-right: 15px;
+ }
+
